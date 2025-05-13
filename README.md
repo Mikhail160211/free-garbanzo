@@ -18,12 +18,12 @@
 ## Установка
 Клонируйте репозиторий:
 
-''' git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
-cd <ПАПКА_ПРОЕКТА> '''
+``` git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
+cd <ПАПКА_ПРОЕКТА> ```
 
 # Установите необходимые зависимости:
 
-''' pip install -r requirements.txt '''
+``` pip install -r requirements.txt ```
 
 (Примечание: Файл requirements.txt не был предоставлен, но исходя из кода, необходимы telebot, requests, Pillow).
 
