@@ -74,7 +74,7 @@ def guess_1(message):
     api.save_image(files, "generated_image.jpg")
 
     with open("generated_image.jpg", "rb") as photo:
-        bot.send_photo(message.chat.id, photo, caption="Try to guess it good luck(write the first letter in big)!")
+        bot.send_photo(message.chat.id, photo, caption="Try to guess it good luck!")
     
 
 
@@ -85,7 +85,7 @@ def guess_1(message):
 def check_image(message):
     global animal
     answer = message.text
-    if answer == animal:
+    if answer.lower() == animal.lower():
         bot.reply_to(message, "You guessed it right!")
     else:
         bot.reply_to(message, "Try again!")
